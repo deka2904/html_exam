@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            border:3px solid red;
+        }
+        .blue{
+            border:3px solid blue;
+        }
+        div{
+            width : 500px;
+            height : 500px;
+            margin:5px 0;
+            background-color : red;
+            display:none;
+        }
+        .box2{
+            background-color : blue;
+        }
+
+        .blue:hover ~ .box2{
+            display:block;
+        }
+        .red:hover ~ .box1{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+<span class="red">red</span>
+<span class="blue">blue</span>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

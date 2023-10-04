@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    section {
+      margin-top:500px;
+      width:200px;
+      height:200px;
+      border:10px solid red;
+    }
+
+    section > div {
+      width:50%;
+      height:25%;
+      background-color:blue;
+      position:absolute;
+    }
+
+    section > div:nth-child(1) {
+      top:0;
+      left:0;
+    }
+
+    section > div:nth-child(2) {
+      background-color:gold;
+      top:10%;
+      left:10%;
+    }
+
+    section > div:nth-child(3) {
+      background-color:pink;
+      top:20%;
+      left:20%;
+    }
+
+    section > div:nth-child(4) {
+      background-color:green;
+      top:30%;
+      left:30%;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+</body>
+</html>

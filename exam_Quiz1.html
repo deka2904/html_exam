@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      *{
+        padding : 0;
+        margin : 0;
+      }
+      .box1{
+        background-color : red;
+        padding : 10px;
+        display : inline-block;
+      }
+      .orange{
+        width : 100px;
+        height : 100px;
+        background-color : orange;
+        display : inline-block;
+      }
+      .box2 {
+          background-color : aqua;
+          padding : 30px;
+          margin : 60px 0;
+      }
+      .blue{
+        width : 200px;
+        height : 100px;
+        background-color : blue;
+        display : inline-block;
+      }
+      .box3{
+        background-color : yellowgreen;
+        padding : 50px;
+        margin : 0 50px;
+      }
+      .box3 > h1 {
+        background-color : skyblue;
+        padding : 20px;
+        color : white
+      }
+      .box3 > p {
+        font-size : 12px;
+        margin : 50px 0 0 0;
+      }
+
+      .box4 {
+        background-color : red;
+        padding : 30px;
+        margin : 50px 312px;
+      }
+
+      .orange2 {
+        height : 57px;
+        width : 57px;
+        background-color : orange;
+        display : inline-block;
+      }
+
+      .box4 > p {
+        background-color : orange;
+        padding : 30px;
+        color : white;
+        font-size : 12px;
+        margin : 30px;
+      }
+      .box5 {
+        background-color:aqua;
+        padding:30px;
+        width:70%;
+      }
+      .item {
+        display:inline-block;
+        padding:10px;
+        color:white;
+      }
+      .box5 > .item_odd{
+        background-color:blue;
+      }
+      .box5 > .item_even{
+        background-color:gray;
+      }
+
+      .box6{
+        background-color : yellowgreen;
+        padding : 50px;
+        color : white;
+        margin: 60px 340px;
+      }
+      .box6 > h1 {
+        font-size : 20px;
+      }
+      .box6_p1{
+        background-color : skyblue;
+        padding : 20px;
+        margin : 20px 0;
+      }
+      .box6_p2{
+        background-color : gray;
+        padding : 20px;
+        margin : 20px 0;
+      }
+
+      .box7 {
+        background-color : red;
+        padding : 30px;
+        width : 45%;
+        font-size:40px;
+      }
+      .item2 {
+        background-color : white;
+        margin : 0 0 30px;
+      }
+
+      .box8 {
+        background-color : blue;
+        padding : 30px;
+        margin : 70px 40px;
+      }
+      .box8 > h1 {
+        background-color : white;
+        display : inline-block;
+        padding : 30px;
+        font-size:20px;
+      }
+      .box8 > p {
+        background-color : aqua;
+        padding : 30px;
+        margin:30px 0 0;
+        color : white;
+      }
+      .box8 > p > span {
+        background-color:white;
+        color:black;
+      }
+      .box9 {
+        background-color:yellowgreen;
+        padding:30px;
+        color:white;
+        margin: 0 100px 30px 100px;
+      }
+
+      .box9 > .box9_p1 {
+        padding:20px;
+        background-color:gray;
+      }
+
+      .box9 > .box9_p2 {
+        padding:10px;
+        background-color:skyblue;
+        margin:20px 20px;
+      }
+
+      .box9 > .box9_p3 {
+        padding:25px;
+        background-color:orange;
+        margin:0px 20px;
+      }
+    </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="orange"></div>
+    <div class="orange"></div>
+    <div class="orange"></div>
+    <div class="orange"></div>
+  </div>
+
+  <div class="box2">
+    <div class="blue"></div>
+    <div class="blue"></div>
+    <div class="blue"></div>
+  </div>
+
+  <div class="box3">
+    <h1>Here comes title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias repellat consequatur, harum sint exercitationem sequi deleniti laudantium inventore excepturi reprehenderit nostrum enim aliquam non quod laborum error aperiam, expedita quaerat.</p>
+  </div>
+
+  <div class="box4">
+    <div class="orange2"></div>
+    <div class="orange2"></div>
+    <div class="orange2"></div>
+    <div class="orange2"></div>
+    <div class="orange2"></div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore similique non et quis laborum dolorum excepturi quibusdam necessitatibus aperiam officia quidem, fugit dignissimos, illo, animi enim ducimus quia laudantium cum?</p>
+  </div>
+
+  <div class="box5">
+    <div class="item item_odd">content1</div>
+    <div class="item item_even">content2</div>
+    <div class="item item_odd">content3</div>
+    <div class="item item_even">content4</div>
+  </div>
+
+  <div class="box6">
+    <h1>Here comes title</h1>
+    <p class="box6_p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aut perspiciatis non temporibus corporis obcaecati a ratione maiores nostrum, laborum iste commodi harum tempore sit debitis autem explicabo. Recusandae, exercitationem.</p>
+    <p class="box6_p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, similique iste. Fuga ab ipsum architecto, ullam, accusantium quidem quam enim nobis eligendi minus ex neque, necessitatibus sunt quas dolore est?</p>
+  </div>
+
+  <div class="box7">
+    <div class="item2">1</div>
+    <div class="item2">2</div>
+    <div class="item2">3</div>
+  </div>
+
+  <div class="box8">
+    <h1>Here comes title</h1>
+    <p>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Quas, officia? Ea illum rem aspernatur, similique at ducimus quo? Magnam <span>rerum</span> nemo distinctio! Fuga repellendus libero ullam vel laborum nihil. Tempore!</p>
+  </div>
+
+  <div class="box9">
+    <p class="box9_p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione fugit exercitationem magnam, nam assumenda corrupti minus vitae eius facilis sunt aspernatur id voluptatum dicta omnis ea, facere qui mollitia quos.</p>
+    <p class="box9_p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corporis nesciunt iste ab modi obcaecati molestias ipsa fuga eius perferendis consectetur mollitia, sit quas, aliquam porro repellendus non assumenda illo.</p>
+    <p class="box9_p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur doloremque amet itaque vel velit? Molestiae placeat consequuntur quam, beatae reiciendis voluptatum impedit, provident adipisci, neque id qui labore at ad?</p>
+  </div>
+</body>
+</html>

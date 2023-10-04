@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section>div {
+            position:absolute;
+            width:33.333%;
+            height:100%;
+            background-color:red;
+        }
+         section>div:nth-child(1) {
+            top:0;
+            left:0;
+        }
+         section>div:nth-child(2) {
+            top:0;
+            left:33.333%;
+            background-color:green;
+        }
+        section>div:nth-child(3) {
+            top:0;
+            left:66.666%;
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

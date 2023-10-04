@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        ul,ol,li{list-style:none;}
+        a{
+            text-decoration:none;
+            color:inherit;
+        }
+        .flex{
+            display:flex;
+            justify-content:space-between;
+        }
+        .logo{
+            text-align : center;
+            padding : 20px 0;
+        }
+        .gnb{
+            width:50%;
+            margin:0 auto;
+            border:3px solid red;
+            text-align:center;
+        }
+        .gnb > li {
+            border : 1px solid #000;
+            position: relative;
+        }
+        .gnb > li > a {
+            display : block;
+            padding : 10px 20px;
+        }
+        .sub{
+            position:absolute;
+            background : gray;
+            width:100%;
+            display:none;
+            z-index:99;
+        }
+        .sub > li > a {
+            display : block;
+            padding: 5px 10px;
+            color : white;
+        }
+        .gnb > li:hover .sub{
+            display : block;
+        }
+        .visual{
+            height : 500px;
+            background : orange;
+            position : relative;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="logo">logo</h1>
+    <ul class="gnb flex">
+        <li>
+            <a herf="#">1depth</a>
+            <ul class="sub">
+                <li><a herf="#">2depth</a></li>
+                <li><a herf="#">2depth</a></li>
+                <li><a herf="#">2depth</a></li>
+            </ul>
+        </li>
+        <li>
+            <a herf="#">1depth</a>
+            <ul class="sub">
+                <li><a herf="#">2depth</a></li>
+                <li><a herf="#">2depth</a></li>
+                <li><a herf="#">2depth</a></li>
+            </ul>
+        </li>
+        <li>
+            <a herf="#">1depth</a>
+            <ul class="sub">
+                <li><a herf="#">2depth</a></li>
+                <li><a herf="#">2depth</a></li>
+                <li><a herf="#">2depth</a></li>
+            </ul>
+        </li>
+        <li>
+            <a herf="#">1depth</a>
+            <ul class="sub">
+                <li><a herf="#">2depth</a></li>
+                <li><a herf="#">2depth</a></li>
+                <li><a herf="#">2depth</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="visual"></div>
+</body>
+</html>
